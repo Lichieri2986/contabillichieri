@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Educativo & Inteligência Fiscal | Contabil Lichieri</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body style="background-color: #f8fafc;">
+
+    <section class="hero-section" style="min-height: 35vh; padding: 40px 8%;">
+        <div class="hero-container">
+            <div class="hero-text-content">
+                <span class="hero-tagline">Conhecimento Estratégico</span>
+                <h1 class="hero-title">Inteligência Tributária para <span class="highlight-text">Pequenos Negócios</span></h1>
+                <p class="hero-subtitle">Descubra como proteger seu caixa, reduzir impostos legalmente e blindar seu CNPJ contra o Fisco.</p>
+                <a href="/" style="color: #D69E2E; font-weight: 700; text-decoration: none;">← Voltar para o Site</a>
+            </div>
+        </div>
+    </section>
+
+    <section style="padding: 60px 8%; max-width: 1200px; margin: 0 auto;">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px;">
+            
+            <% if (artigos.length > 0) { %>
+                <% artigos.forEach(artigo => { %>
+                    <article style="background: #ffffff; padding: 25px; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px rgba(0,0,0,0.02); display: flex; flex-direction: column; justify-content: space-between;">
+                        <div>
+                            <span style="color: #64748b; font-size: 0.8rem;"><%= artigo.date %></span>
+                            <h2 style="color: #1A365D; font-size: 1.3rem; margin: 10px 0; font-weight: 700; line-height: 1.4;"><%= artigo.title %></h2>
+                            <p style="color: #475569; font-size: 0.95rem; line-height: 1.6; margin-bottom: 20px;"><%= artigo.excerpt %></p>
+                        </div>
+                        <a href="/blog/<%= artigo.slug %>" style="color: #D69E2E; font-weight: 700; text-decoration: none; font-size: 0.95rem;">Ler Artigo Completo →</a>
+                    </article>
+                <% }) %>
+            <% } else { %>
+                <p>Nenhum artigo publicado no momento.</p>
+            <% } %>
+
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "title": "Como Pagar Menos Imposto como Profissional Autônomo? Descubra o Fator R",
+    "slug": "como-pagar-menos-imposto-fator-r",
+    "excerpt": "Se você é médico, programador, engenheiro ou consultor e atua na Pessoa Física, sua mordida do IR pode chegar a 27,5%. Descubra como o Fator R reduz isso para apenas 6% de forma legal.",
+    "date": "11 de Junho de 2026",
+    "image": "/assets/blog-fator-r.jpg",
+    "content": "<h3>O perigo de atuar na Pessoa Física</h3><p>Muitos profissionais liberais iniciam suas carreiras recebendo valores diretamente na conta bancária de Pessoa Física. O grande erro dessa abordagem é ficar sujeito à tabela progressiva do Imposto de Renda, que atinge rapidamente o teto de 27,5%, além do teto do INSS autônomo. A migração para uma Pessoa Jurídica (PJ) é o primeiro passo para a eficiência de caixa.</p><h3>Como o Fator R do Simples Nacional salva seu lucro?</h3><p>Quando você abre uma empresa de prestação de serviços intelectuais, por padrão, ela pode ser tributada pelo Anexo V do Simples Nacional, iniciando em amargos 15,5% de imposto. No entanto, a legislação prevê um benefício: o Fator R.</p><p>Se a folha de pagamento da sua empresa (incluindo o seu Pró-labore e encargos) representar 28% ou mais do seu faturamento bruto acumulado, sua empresa é migrada automaticamente para o Anexo III. A alíquota inicial despenca para <strong>apenas 6%</strong>.</p><h3>Nosso papel consultivo</h3><p>Na Contabil Lichieri, nós calculamos e calibramos o seu Pró-labore mês a mês de forma matemática. Garantimos que sua empresa permaneça na menor faixa de tributação permitida por lei, gerando economia real e blindagem para o seu bolso.</p>"
+  },
+  {
+    "id": 2,
+    "title": "A Farsa do DAS Unificado: Sua Empresa do Simples está Pagando Imposto Duplicado?",
+    "slug": "farsa-das-unificado-imposto-duplicado",
+    "excerpt": "A ilusão de que o Simples Nacional unifica tudo faz pequenas indústrias, comércios e autopeças pagarem PIS/COFINS e ICMS duas vezes. Descubra se você está perdendo margem de lucro.",
+    "date": "10 de Junho de 2026",
+    "image": "/assets/blog-bitributacao.jpg",
+    "content": "<h3>A armadilha da guia única</h3><p>O Documento de Arrecadação do Simples Nacional (DAS) é vendido pelo mercado como a solução mais simples para o microempresário. O problema é que as contabilidades de volume pegam o seu faturamento bruto total, jogam no sistema do governo e geram a guia cheia. É aí que o seu dinheiro some.</p><h3>Substituição Tributária e Produtos Monofásicos</h3><p>Se o seu negócio revende mercadorias como autopeças, cosméticos, bebidas, produtos farmacêuticos ou itens de perfumaria, o imposto desses produtos (ICMS e PIS/COFINS) já foi pago de forma antecipada pela fábrica ou pela distribuidora grande (Regime de Tributação Monofásica e ST).</p><p>A legislação fiscal brasileira proíbe o governo de cobrar esse imposto novamente na ponta final. Portanto, na hora de apurar o Simples Nacional, esses valores <strong>devems ser segregados e abatidos</strong> da base de cálculo.</p><h3>O Escudo da Blindagem Fiscal</h3><p>Nossa equipe realiza uma auditoria digital mensal em cada XML de nota fiscal emitido pelo seu negócio. Nós separamos os produtos comuns dos monofásicos e geramos a sua guia do DAS com o abatimento legal exato. Se a sua contabilidade atual não faz isso, você está sofrendo uma bitributação invisível.</p>"
+  },
+  {
+    "id": 3,
+    "title": "Faturamento Limite do Simples Nacional: O que acontece se sua empresa crescer demais?",
+    "slug": "faturamento-limite-simples-nacional",
+    "excerpt": "O limite do Simples Nacional é de R$ 4,8 milhões, mas o perigo real mora no sublimite de R$ 3,6 milhões. Entenda os riscos de exclusão retroativa e como fazer uma transição segura.",
+    "date": "09 de Junho de 2026",
+    "image": "/assets/blog-limite.jpg",
+    "content": "<h3>O Sublimite: O verdadeiro vilão oculto</h3><p>Muitos donos de pequenas empresas acreditam que estão totalmente seguros operando dentro do teto anual de R$ 4,8 milhões do Simples Nacional. O que muitos não sabem é que existe um limitador estadual e municipal chamado <strong>Sublimite</strong>, fixado em R$ 3,6 milhões de faturamento acumulado nos últimos 12 meses.</p><h3>As consequências do estouro do Sublimite</h3><p>Se a sua empresa ultrapassar a barreira dos R$ 3,6 milhões (mas continuar abaixo de R$ 4,8 milhões), ela permanece no Simples Nacional para os impostos federais, mas é <strong>excluída obrigatoriamente</strong> do recolhimento simplificado do ICMS (Estado) e do ISS (Município).</p><p>A partir do mês seguinte, sua empresa terá que apurar o ICMS/ISS por fora, seguindo as regras complexas do Lucro Presumido ou Lucro Real, emitindo guias adicionais de obrigações acessórias (GIA, SPED). Se isso for feito sem planejamento, o negócio pode travar por falta de fluxo de caixa.</p><h3>Planejamento Societário e Tributário Pró-ativo</h3><p>Na Incubadora de Negócios da Contabil Lichieri, nós acompanhamos o seu crescimento de forma preditiva. Monitoramos seu faturamento acumulado e, caso o teto seja ameaçado, desenhamos com antecedência uma transição segura, evitando multas retroativas e surpresas finais.</p>"
+  }
+]

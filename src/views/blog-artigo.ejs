@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= artigo.title %> | Inteligência Fiscal Lichieri</title>
+    <link rel="stylesheet" href="/assets/style.css">
+</head>
+<body>
+
+    <section class="hero-section" style="min-height: 45vh; padding: 60px 8%;">
+        <div class="hero-container" style="max-width: 900px; margin: 0 auto; display: block; text-align: left;">
+            <span class="hero-tagline" style="margin-bottom: 10px;">Conteúdo Técnico • <%= artigo.date %></span>
+            <h1 class="hero-title" style="font-size: 2.4rem; line-height: 1.3; margin-bottom: 25px; max-width: 100%;"><%= artigo.title %></h1>
+            <a href="/blog" style="color: #D69E2E; font-weight: 700; text-decoration: none; font-size: 1rem; display: inline-block;">← Voltar para a listagem</a>
+        </div>
+    </section>
+
+    <main class="blog-content-container">
+        <article>
+            
+            <%- artigo.content %>
+            
+        </article>
+
+        <div style="margin-top: 70px; background-color: #ffffff; padding: 45px; border-radius: 16px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 20px 40px rgba(15,32,66,0.04);">
+            <h3 style="color: #1A365D; font-size: 1.6rem; font-weight: 800; margin-bottom: 12px; text-align: center;">Ficou com alguma dúvida sobre o impacto disso no seu negócio?</h3>
+            <p style="color: #64748b; font-size: 1.05rem; margin-bottom: 30px; line-height: 1.6; max-width: 620px; margin-left: auto; margin-right: auto; text-align: center;">
+                A legislação brasileira possui armadilhas invisíveis. Permita que nosso time técnico avalie os riscos e oportunidades da sua operação de forma gratuita.
+            </p>
+            <a href="/#formulario" class="btn-submit-form" style="text-decoration: none; display: inline-block; padding: 16px 36px; width: auto; font-size: 1rem;">Falar com um Consultor Técnico</a>
+        </div>
+    </main>
+
+    <footer style="background: #0b1528; padding: 40px 5%; border-top: 1px solid rgba(255,255,255,0.05); color: #94a3b8; font-size: 0.85rem; text-align: center;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; align-items: center;">
+            <p style="color: #ffffff; font-weight: 700; font-size: 1rem; margin: 0;">CONTABIL LICHIERI & ASSOCIADOS</p>
+            <p style="margin: 0; line-height: 1.6;">
+                © 2026 Contabil Lichieri. Todos os direitos reservados.<br>
+                Proteção Fiscal Ativa, Auditoria Digital Preventiva e Gestão Consultiva no Simples Nacional.<br>
+                CNPJ: 35.785.805/0001-72 | Suzano - SP
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

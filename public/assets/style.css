@@ -1,0 +1,596 @@
+/* ==========================================================================
+   ARQUITETURA DE ESTILO CORPORATIVO - CONTABIL LICHIERI (OTIMIZADO)
+   ========================================================================== */
+
+/* Reset Geral e Tipografia Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8fafc;
+    color: #1e293b;
+    overflow-x: hidden;
+}
+
+/* --- DOBRA 1: HERO SECTION --- */
+.hero-section {
+    background: linear-gradient(135deg, #0b1528 0%, #1A365D 100%);
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.hero-tagline {
+    color: #D69E2E;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero-title {
+    color: #ffffff;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-title .highlight-text {
+    color: #D69E2E;
+}
+
+.hero-subtitle {
+    color: #cbd5e1;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 35px;
+}
+
+/* Grid de Cards de Conversão Direct-Response */
+.hero-cards-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.hero-card-btn {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 18px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.hero-card-btn:hover {
+    transform: translateY(-3px);
+    background: rgba(255, 255, 255, 0.08);
+    border-color: #D69E2E;
+}
+
+.hero-card-btn.active {
+    background: #D69E2E;
+    border-color: #D69E2E;
+    box-shadow: 0 10px 25px rgba(214, 158, 46, 0.25);
+}
+
+.hero-card-btn .card-icon {
+    font-size: 1.6rem;
+    margin-right: 18px;
+}
+
+.hero-card-btn .card-text h3 {
+    color: #ffffff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+}
+
+.hero-card-btn.active .card-text h3 {
+    color: #0b1528;
+}
+
+.hero-card-btn .card-text p {
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+.hero-card-btn.active .card-text p {
+    color: #453005;
+}
+
+/* Lado Direito: Mídia e Badges */
+.hero-image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 420px;
+}
+
+.main-hero-img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+    display: block;
+}
+
+.floating-badge {
+    position: absolute;
+    bottom: 25px;
+    left: -25px;
+    background: #ffffff;
+    padding: 14px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.25);
+    border: 1px solid #e2e8f0;
+}
+
+.badge-icon {
+    background: #10b981;
+    color: #ffffff;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.badge-text h4 {
+    color: #1e293b;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.badge-text p {
+    color: #64748b;
+    font-size: 0.75rem;
+}
+
+/* --- DOBRA 2: SUSTENTAÇÃO TÉCNICA (VÍDEO) --- */
+.video-section {
+    background: #f8fafc;
+    padding: 120px 5% 90px 5%; /* Aumento do respiro superior */
+    text-align: center;
+}
+
+.video-section-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.video-header {
+    margin-bottom: 45px;
+}
+
+.video-section-title {
+    color: #1A365D;
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+    letter-spacing: -0.5px;
+}
+
+.video-section-subtitle {
+    color: #475569;
+    font-size: 1.15rem;
+    max-width: 720px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.video-wrapper-facade {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background: linear-gradient(135deg, #0b1528 0%, #1A365D 100%);
+    border-radius: 16px;
+    box-shadow: 0 30px 60px -15px rgba(11, 21, 40, 0.3);
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.video-wrapper-facade:hover {
+    transform: scale(1.015);
+}
+
+.video-thumbnail-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(11, 21, 40, 0.5);
+}
+
+.video-preview-text {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.video-play-btn {
+    background: #D69E2E;
+    border: none;
+    padding: 18px 36px;
+    border-radius: 50px;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.05rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 10px 25px rgba(214, 158, 46, 0.45);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-play-btn:hover {
+    background: #e2a834;
+    box-shadow: 0 15px 30px rgba(214, 158, 46, 0.6);
+    transform: translateY(-2px);
+}
+
+/* --- DOBRA 3: VITRINE INTELIGENTE DO BLOG --- */
+.blog-preview-section {
+    background-color: #ffffff; /* Contraste total com o cinza do vídeo */
+    padding: 110px 8%;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.blog-grid-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+}
+
+.blog-card-home {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 14px;
+    overflow: hidden;
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(15, 32, 66, 0.04);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-card-home:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 30px 45px -10px rgba(15, 32, 66, 0.12);
+    border-color: #D69E2E;
+}
+
+.blog-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    /* Gradiente seguro de fundo caso o arquivo físico (.jpg) falte na pasta */
+    background: linear-gradient(135deg, #1A365D 0%, #0b1528 100%); 
+    display: block;
+}
+
+.blog-card-content {
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.blog-card-title {
+    color: #1A365D;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+.blog-card-link {
+    color: #D69E2E;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.blog-card-link:hover {
+    color: #e2a834;
+}
+
+/* --- DOBRA 4: FORMULÁRIO DE CONVERSÃO EXECUTIVA --- */
+.fechamento-section {
+    background: #f1f5f9; /* Fundo cinza ligeiramente mais escuro para destacar o card */
+    padding: 110px 5%;
+}
+
+.form-card-container {
+    max-width: 650px;
+    margin: 0 auto;
+    background: #ffffff; /* Efeito flutuante em cima do fundo cinza */
+    padding: 50px;
+    border-radius: 16px;
+    box-shadow: 0 30px 60px -15px rgba(15, 32, 66, 0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.form-section-title {
+    color: #1A365D;
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.form-section-subtitle {
+    color: #64748b;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.premium-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: left;
+}
+
+.form-group label {
+    color: #1A365D;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form-group input, .form-group select {
+    padding: 14px 18px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #334155;
+    background-color: #ffffff;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus, .form-group select:focus {
+    border-color: #D69E2E;
+    box-shadow: 0 0 0 3px rgba(214, 158, 46, 0.15);
+}
+
+.btn-submit-form {
+    background: #D69E2E;
+    color: #ffffff;
+    border: none;
+    padding: 18px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(214, 158, 46, 0.3);
+    transition: all 0.3s ease;
+    margin-top: 10px;
+}
+
+.btn-submit-form:hover {
+    background: #e2a834;
+    transform: translateY(-2px);
+    box-shadow: 0 12px 25px rgba(214, 158, 46, 0.45);
+}
+
+.btn-submit-form:disabled {
+    background: #cbd5e1;
+    color: #94a3b8;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+/* ==========================================================================
+   OTIMIZAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVIDADE PREMIUM)
+   ========================================================================== */
+@media (max-width: 992px) {
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+        padding-top: 20px;
+    }
+    .hero-text-content { max-width: 100%; }
+    .hero-title { font-size: 2.2rem; }
+    .hero-image-content { width: 100%; order: -1; }
+    .image-wrapper { max-width: 320px; }
+    .floating-badge {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -15px;
+        width: 90%;
+        justify-content: center;
+    }
+}
+@media (max-width: 576px) {
+    .hero-section { padding: 30px 4%; }
+    .hero-title { font-size: 1.8rem; }
+    .hero-subtitle { font-size: 1rem; }
+    .video-section-title { font-size: 1.6rem; }
+    .form-card-container { padding: 25px 20px; }
+    .form-section-title { font-size: 1.5rem; }
+    .video-play-btn { padding: 12px 24px; font-size: 0.9rem; }
+}
+
+/* ==========================================================================
+   OTIMIZAÇÃO DE TIPOGRAFIA E LEITURA DO BLOG (UX READING)
+   ========================================================================== */
+
+/* Limita e centraliza o bloco de texto para o olho não cansar ao ler */
+.blog-content-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 5%;
+}
+
+/* Formatação fina do corpo do texto */
+.blog-content-container article {
+    font-size: 1.15rem;          /* Aumenta o tamanho do texto para equilibrar com o topo */
+    line-height: 1.85;          /* Dá mais respiro entre as linhas */
+    color: #334155;             /* Tom de cinza escuro premium (menos agressivo que o preto puro) */
+    text-align: justify;        /* Resolve o problema do texto desalinhado */
+    text-justify: inter-word;   /* Garante espaçamento uniforme entre as palavras ao justificar */
+}
+
+/* Espaçamento e peso dos Títulos Internos (H3) */
+.blog-content-container article h3 {
+    color: #1A365D;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 40px;           /* Afasta o título do parágrafo anterior */
+    margin-bottom: 15px;        /* Aproxima o título do texto dele */
+    letter-spacing: -0.5px;
+    text-align: left;           /* Títulos permanecem à esquerda por padrão de design */
+}
+
+/* Formatação dos Parágrafos */
+.blog-content-container article p {
+    margin-bottom: 22px;        /* Espaçamento elegante entre um parágrafo e outro */
+}
+
+/* Destaque para termos em negrito no meio do texto */
+.blog-content-container article strong {
+    color: #1A365D;
+    font-weight: 700;
+}
+
+/* --- ESTILIZAÇÃO DA SEÇÃO COMPARATIVA PREMIUM --- */
+.comparativo-section {
+    background: #f1f5f9 !important; /* Fundo cinza técnico suave para quebrar o branco anterior */
+    padding: 100px 8%;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabela-comparativa-container {
+    max-width: 1000px;
+    margin: 50px auto 0 auto;
+    overflow-x: auto; /* Garante que a tabela não quebre no celular */
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(15, 32, 66, 0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.tabela-premium {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.tabela-premium th, .tabela-premium td {
+    padding: 18px 20px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.tabela-premium th {
+    color: #1A365D;
+    font-weight: 700;
+    font-size: 1.05rem;
+    background: #ffffff;
+}
+
+/* Destaca a coluna da Lichieri na tabela */
+.tabela-premium th.col-lichieri {
+    color: #0b1528;
+    background: rgba(214, 158, 46, 0.08);
+    border-radius: 8px 8px 0 0;
+    font-weight: 800;
+}
+
+.tabela-premium td.feature-title {
+    font-weight: 700;
+    color: #1A365D;
+    width: 30%;
+}
+
+.tabela-premium td.check-lichieri {
+    color: #10b981; /* Verde Compliance */
+    font-weight: 600;
+    background: rgba(214, 158, 46, 0.03); /* Fundo dourado sutil transparente */
+    width: 45%;
+}
+
+.tabela-premium td.check-online {
+    color: #64748b; /* Cinza mutado */
+    width: 25%;
+}
+
+/* Otimização Responsiva para a Tabela no Celular */
+@media (max-width: 768px) {
+    .tabela-premium th, .tabela-premium td {
+        padding: 12px 10px;
+        font-size: 0.85rem;
+    }
+}
