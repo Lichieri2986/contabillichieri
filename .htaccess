@@ -1,0 +1,18 @@
+# ----------------------------------------------------------------------
+# DIRECIONAMENTO INTELIGENTE DA HOSPEDAGEM PARA MOTOR NODE.JS
+# ----------------------------------------------------------------------
+
+RewriteEngine On
+
+# Impede o erro 403 desativando a listagem padrão de diretórios
+Options -Indexes
+
+# Se o arquivo ou pasta real existir na pasta public, o servidor entrega direto (CSS, Imagens)
+RewriteCond %{DOCUMENT_ROOT}/public/$1 -f [OR]
+RewriteCond %{DOCUMENT_ROOT}/public/$1 -d
+RewriteRule ^(.*)$ /public/$1 [L]
+
+# Caso contrário, passa todo o tráfego e rotas dinâmicas do Blog para o Node.js em background
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ http://127.0.0.1:3000/$1 [P,L]
